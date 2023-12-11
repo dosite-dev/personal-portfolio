@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>my portofolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="header"
+        style="background-image:url(./images/photo1.jpg);background-size:contain; background-repeat: no-repeat; margin:0;align-items: right;">
+        <div class="container">
+            <nav>
+                <img src="./images/logo2.jpg" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portofolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class='bx bxs-hand-up bx-tada' onclick="closeMenu()"></i>
+
+                </ul>
+                <i class='bx bx-menu' onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <div class="intro">
+                   
+                    <h1>Hi , I'm Software Developer<br><span>Dosite </span><br>Cyiza IRADUKUNDA <br>From Rwanda</h1>
+                </div>
+                <!-- <div class="introimag">
+                    <img src="photo1.jpg" alt="photo1">
+
+                </div> -->
+            </div>
+
+        </div>
+
+    </div>
+    <!-- ---------------------About-------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/photo2.jpg" alt="about image1">
+                </div>
+                <div class="about-col-2">
+                    <h2 class="title">About Me</h2>
+                    <p>Experienced Software Developer like building website by using HTML,CSS,JavaScript, Creating
+                        program by using C and designing website
+                        by including PHP CRUD operations .
+                        Able to effectively self-manage during independent projects, as well
+                        as collaborate as part of a productive team.</p>
+                    <div class="aboutme">
+                        <p class="aboutme-tab activetab" id="about-skills " onclick="opentab('about-skills-content')">
+                            Skills</p>
+                        <p class="aboutme-tab" id="about-Experience" onclick="opentab('about-Experience-content')">
+                            Experience</p>
+                        <p class="aboutme-tab" id="about-Education" onclick="opentab('about-Education-content')">
+                            Education</p>
+                    </div>
+
+                    <div class="aboutme-content activecontent" id="about-skills-content">
+                        <ul>
+                            <li><span>Web Development</span><br>designing website both front and backed side</li>
+                            <li><span>Web Maintenance</span><br>Maintaning Website by removing issues and keep it update
+                                and relevant</li>
+                            <li><span>Database Development</span><br>Manage Database by using different sql query</li>
+                            <li><span>Graphic Design</span><br> Designing Banner and Logo</li>
+                            <li><span>C Language</span></li>
+                            <li><span>PHP</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>HTml & CSS</span></li>
+
+                        </ul>
+                    </div>
+                    <div class="aboutme-content" id="about-Experience-content">
+                        <ul>
+                            <li><span>2022-March_2022-April(NOVA Company LTD)</span><br>Web Designing <br>Graphic Design
+                            </li>
+                            <li><span>2023-April_2023-June[Kigali City Macro Computer(KCMC) LTD ]</span><br>Computer
+                                Hardware <br>
+                                PHP Language</li>
+                            <li><span>2023-October_2024-February(SheCanCode School)</span><br>HTml & CSS<br>JavaScript
+                                Language<br> Mongo DB <br>Node js </li>
+                        </ul>
+                    </div>
+                    <div class="aboutme-content" id="about-Education-content">
+                        <ul>
+                            <li><span>2020-2021</span><br>Computer Application</li>
+                            <li><span>2021-2023</span><br>Software Development <br></li>
+                            <li><span>2023-2024</span><br>SheCanCode School </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------services-------------------- -->
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title">My Services</h2>
+            <div class="services-list">
+                <div>
+                    <a href=""><i class='bx bx-code-alt'></i></a>
+                    <h3>Web Design</h3>
+                    <p>Designing web interface with Responsiveness</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+
+                <div>
+                    <a href=""><i class="bx bx-brush-alt"></i></a>
+                    <h3>Web Maintenance</h3>
+                    <p>Maintaning Website and keep it update</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+                <div>
+                    <a href=""><i class='bx bxs-layer'></i></a>
+                    <h3>Graphic Design</h3>
+                    <p>Designing your logo and Banner</p>
+                    <a href="#">Learn more</a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ---------------------Portofolio-------------------- -->
+    <div id="portofolio">
+        <div class="container">
+            <h2 class="sub-title">My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/project1.PNG" alt="work1">
+                    <div class="layer">
+                        <h3>Web Page</h3>
+                        <p></p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/project2.PNG" alt="work2">
+                    <div class="layer">
+                        <h3>Registration Form</h3>
+                        <p></p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/project3.PNG" alt="work3">
+                    <div class="layer">
+                        <h3>Cafe Menu</h3>
+                        <p></p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+        <!-- ---------------------contact-------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class='bx bxs-send bx-tada'></i>dositecyiza@gmail.com</p>
+                        <p><i class='bx bxs-phone-call bx-burst'></i></i>0783582298</p>
+                        <div class="socialmedia-icons">
+                            <a href="https://web.facebook.com/profile.php?id=100072202652888"><i
+                                    class='bx bxl-facebook-circle'></i></a>
+                            <a href=""><i class='bx bxl-instagram'></i></a>
+                            <a href=""><i class='bx bxl-whatsapp'></i></a>
+                            <a href=""><i class='bx bxl-tiktok'></i></a>
+                            <a href=""><i class='bx bxl-linkedin'></i></a>
+                            <a href=""><i class='bx bxl-github'></i></a>
+                            <a href=""><i class='bx bxl-twitter'></i></a>
+                            <a href=""><i class='bx bxl-snapchat'></i></a>
+                        </div>
+                        <a href="#" download class="btn btn2">Download Cv</a>
+
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Enter Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your message......."></textarea>
+                            <button type="submit" class="btn btn2" id="subbutton">submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>copyright<i class='bx bx-copyright bx-tada'></i>Dosite Cyiza</p>
+            </div>
+        </div>
+        <script>
+            var sidemen = document.getElementById("sidemenu");
+            function openMenu() {
+                sidemen.style.right = "0";
+            }
+            function closeMenu() {
+                sidemen.style.right = "-200px";
+            }
+
+        </script>
+
+        <script src='portofolio.js'></script>
+
+
+
+</body>
+
+</html>
