@@ -99,6 +99,7 @@ nav ul li a:hover::after{
 .aboutme{
     display: flex;
     margin: 20px 0 40px;
+    line-height: 70px;
     
     
 }
@@ -280,6 +281,19 @@ nav ul li a:hover::after{
 .btn:hover{
     background-color:   rgb(78, 165, 241);
 }
+
+/* ---------------------Testimonial--------------------
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+} */
+
 /* ---------------------contacts-------------------- */
 .contact-left{
     flex-basis: 35%;
